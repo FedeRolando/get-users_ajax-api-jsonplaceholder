@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error{
+    display: inline;
+    padding: 1rem;
+    margin-top: 30px;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(163, 15, 15);
+    border: 2px solid red;
+    
+}
+
+.users{
+    width: 100%;
+    margin: auto;
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.user {
+    width: 250px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(206, 206, 214);
+    .row{
+        padding: 2px 0;
+        margin-bottom: 2px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    }
+    .key{
+        font-weight: bold;
+        color: rgb(18, 18, 49);
+        padding: 0 3px;
+        text-transform: capitalize;
+    }
+    .group{
+        order: 5;
+        padding: 8px;
+        margin: 5px 0;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        .groupName{
+            color: rgb(10, 10, 95);
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .subGroup{
+            display: inline-flex;
+            flex-direction: column;
+            padding: 5px;
+            margin-top: 3px;
+            border-radius: 5px;
+            background-color: rgb(208, 208, 228);
+            .subGroupName{
+                color: rgb(10, 36, 11);
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
